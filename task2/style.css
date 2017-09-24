@@ -12,6 +12,7 @@
          background-color: #f0f0f0;
 
       }
+
       .daohang{
          width: 100%;
          height: 3em;
@@ -564,6 +565,68 @@
       float: left;
       color: #a6a6a6;
     }
+
+
+    #aa{
+      color: #444444;
+      width: 25%;
+      background-color: #ffffff;
+      border-right: 1px solid #d9d9d9;
+    }
+    #aa p{
+      width: 30px;
+      font-size: 20px;
+      display: inline-block;
+    }
+    table{
+    width: 98%;
+    margin:1%;
+    text-align: center;
+    background-color: #fbfbfb;
+
+    }
+    #aab{
+      color: #29bde0;
+      font-size: 20px;
+      border-top: 1px solid #d9d9d9;
+
+    }
+
+    table tr td{
+      height: 2em;
+      color: #a1a1a1;
+      letter-spacing: 4px;
+    }
+    table tr td .span1{
+      padding: 0.3em;
+      display: inline-block;
+      background-color: orange;
+      margin-right: 0.4em;
+    }
+    table tr td .span2{
+      padding: 0.3em;
+      display: inline-block;
+      background-color:#29bde0;
+      margin-right: 0.4em;
+    }
+    form{width: 98%;height: 6em;margin:0 1%;}
+    form input{width: 95%;
+      padding-left: 5%;
+      border:none;
+      border-bottom: 1px solid #d9d9d9;
+      height: 3em;}
+      .renshu{
+        width: 98%;
+        margin:0 1%;
+        height: 6em;
+        line-height: 3em;
+        background-color: #ffffff;
+      }
+      .renshu  p{padding-left: 2em;
+        display: inline-block;}
+      .renshu input{
+        width:1.5em;height: 1.5em;border: none;color:orange;font-size: 18px;text-align: center;background-color: #f4f5f5;
+      }
 
 
 
