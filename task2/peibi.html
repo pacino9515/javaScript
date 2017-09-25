@@ -8,7 +8,7 @@
 
 
    </head>
-   <body>
+   <body class="ccc">
    	<div class="box">
    	<header class="daohang5">
 
@@ -25,36 +25,50 @@
       <table>
          <tr>
             <td rowspan="6" id="aa"><p>玩家配比</p></td>
-            <td><span class="span1"></span>杀&nbsp;&nbsp;手1人</td>
-            <td><span class="span1"></span>杀&nbsp;&nbsp;手1人</td>
+            <td><span class="span1"></span>幽&nbsp;&nbsp;灵<input id="numY" value="4">人</td>
+            <td><span class="span1"></span>水&nbsp;&nbsp;民<input id="numS" value="8">人</td>
          </tr>
          <tr>
-            <td><span class="span2"></span>医&nbsp;&nbsp;生1人</td>
-            <td><span class="span2"></span>医&nbsp;&nbsp;生1人</td>
+            <td><span class="span2"></span>医&nbsp;&nbsp;生0人</td>
+            <td><span class="span2"></span>医&nbsp;&nbsp;生0人</td>
          </tr>
          <tr>
-            <td><span class="span1"></span>狙击手1人</td>
-            <td><span class="span1"></span>狙击手1人</td>
+            <td><span class="span1"></span>狙击手0人</td>
+            <td><span class="span1"></span>狙击手0人</td>
          </tr>
          <tr>
-            <td><span class="span2"></span>警&nbsp;&nbsp;察1人</td>
-            <td><span class="span2"></span>警&nbsp;&nbsp;察1人</td>
+            <td><span class="span2"></span>警&nbsp;&nbsp;察0人</td>
+            <td><span class="span2"></span>警&nbsp;&nbsp;察0人</td>
          </tr>
          <tr>
-            <td><span class="span1"></span>警&nbsp;&nbsp;察1人</td>
-            <td><span class="span1"></span>警&nbsp;&nbsp;察1人</td>
+            <td><span class="span1"></span>警&nbsp;&nbsp;察0人</td>
+            <td><span class="span1"></span>警&nbsp;&nbsp;察0人</td>
          </tr>
          <tr>
             <td colspan="2" id="aab">点击设置<img src="images/o.png" alt="#"></td>
          </tr>
       </table>
-      <form>
+      <form class="aac">
          <input type="shuiming" placeholder="水民词组">
          <input type="ghost" placeholder="幽灵词组" >
       </form>
-      <div class="renshu">
-         <p>玩家人数</p><input type="text" value="18">人
-      </div>
+       <p id="bb">玩家人数<input type="text" value="12" id="playerNum" onblur="onChange()">人</p>
+      <form class="renshu">
+          <div class="btn-sub" id="sub" onclick="reduce()">
+            <div></div></div>
+          <input type="range" id="slider" name="points" value="12" min="6" max="18" step="1" onchange="moveChange()" >
+          <div class="btn-add" id="add" onclick="plus()">
+            <div class="div1"></div><div class="div2"></div>
+          </div>
+      </form>
+
+
+      <footer>
+         <button>去发牌</button>
+      </footer>
+      <script src="style.js">
+
+      </script>
 
 
 
