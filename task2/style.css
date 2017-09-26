@@ -668,19 +668,9 @@
       justify-content: center;
       align-items: center;
       display: inline-block;
+      background: url(images/aa.png) no-repeat center;
     }
-    .btn-sub div{
-      padding-left:0.5em;
-      padding-top:0.2em;
-      background-color: orange;
-      display: inline-block;
-      display: flex;
-      position: relative;
-      right:0em;
-      top: 0.3em;
-      justify-content: center;
-      align-items: center;
-    }
+
     .btn-add{
       outline: none;
       border: none;
@@ -688,29 +678,13 @@
       height: 1em;
       background-color: #ffffff;
       border: 1px solid #d9d9d9;
+      background: url(images/bb.png) no-repeat center;
       /*display: flex;
       justify-content: center;
       align-items: center;*/
       display: inline-block;
     }
-    .btn-add  .div1{
-       padding-left:0.8em;
-      padding-top:0.2em;
-      position: relative;
-      left: 0.1em;
-      bottom:1.3em;
-      background-color: orange;
-      display: inline-block;
-    }
-    .btn-add  .div2{
-      padding-top:0.7em;
-      padding-left:0.15em;
-      position: relative;
-      bottom:1em;
-      right: 0.4em;
-      background-color: orange;
-      display: inline-block;
-    }
+
 
     .renshu input{
       width: 70%;
@@ -754,11 +728,120 @@
         width: 98%;
         height: 3em;
         margin: 1%;
+        position: fixed;
+        bottom: 0;
         display: flex;justify-content:center;align-items: center;
       }
       footer button{width: 100%;height:100%;
         background-color: orange;color: #ffffff;border: none;
         font-size: 20px;display: flex;justify-content:center;align-items: center;}
+
+      .body2{background-color:#29bde0;padding-top: 3em;padding-bottom: 2em;
+       }
+     .box1{
+       width: 100%;
+       height: 100%;
+       overflow: hidden;
+       background-color: #29bde0;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+      }
+      .kuang1{
+        width: 65%;
+        height: 50%;
+        background-color: #ffedc5;
+        border: 5px solid #ffffff;
+        padding: 5.15em 0;
+        margin: 3em;
+        display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+      }
+      .kuang1 .quan{
+        width: 1.5em;
+        height: 1.5em;
+        background-color:#ffffff;
+        border: 3px solid #ffedc5;
+        color: #f56b81;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -5em;
+
+      }
+      .kuang1 img{
+        width: 60%;
+        height: auto;
+
+      }
+
+      .kuang2{
+        width: 65%;
+        height: 50%;
+        background-color: #ffedc5;
+        border: 5px solid #ffffff;
+        margin: 3em;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .kuang2 .quan{
+        width: 1.5em;
+        height: 1.5em;
+        background-color:#ffffff;
+        border: 3px solid #ffedc5;
+        color: #f56b81;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -0.9em;
+
+      }
+      .kuang2 img{
+        width: 50%;
+        height: auto;
+
+      }
+      .kuang2 .p1{
+        color: #29bde0;
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+        text-align: center;
+
+
+      }
+      .kuang2 .p2{
+        color: #f56b81;
+        width: 100%;
+        height: 3em;
+        text-align: center;
+        line-height: 3em;
+        border-bottom: 1px  solid #ffffff;
+      }
+      .kuang2 .p3{
+        width: 80%;
+        padding: 1em;
+        height: 3.9em;
+        color: orange;
+        font-size: 15px;
+        text-align: left;
+      }
+
+
+
 
 
       .sprite {
