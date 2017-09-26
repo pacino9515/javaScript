@@ -68,7 +68,6 @@ function buildArray(){//创建数组
 		array.push("水民")
 	}
 	//数组乱序
-
 	var arrayA = [];
     while (array.length > 0) {
         var index = parseInt(Math.random() * (array.length - 1));
@@ -76,27 +75,46 @@ function buildArray(){//创建数组
         array.splice(index, 1);
     }
 
+
 	//跳转
 	window.location.href="fanpai.html";
 
 }
 var change =true;
+var NO=0;
 function next(){
 	if(!change){
 		kuangOne.style.display="flex";
 		kuangTwo.style.display="none";
+		var numbers=document.getElementById("numbers1");
+		numbers.innerHTML=(NO+1);
+
+
+
+
 	}else{
 		kuangTwo.style.display="flex";
 		kuangone.style.display="none";
+		var numbers=document.getElementById("numbers2");
+		numbers.innerHTML=(NO+1);
+		var role=document.getElementById("role");
+		role.innerHTML="角色:"
+		NO++;
+
 	}
 	change=!change;
+	var bottomText=document.getElementById("watch");
+		bottomText.innerHTML="查看"+(NO+1)+"号身份";
+
+
+
+	// alert(bottomText.innerHTML)
+	// var add=NO+1;
+	// bottomText.innerHTML+=add;
+	// bottomText.innerHTML+="号身份"
+
 
 }
 
 
-// function show(){
-// 	var i=0;//第几号
-// 	var j=0;//用来判断处于何种状态 偶数XXX  奇数XX
-
-// }
 
