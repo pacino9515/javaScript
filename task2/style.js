@@ -85,6 +85,16 @@ function buildArray(){//创建数组
         array[index] = array[len - r - 1];
         array[len - r - 1] = temp;
     }
+    //检测是否输入词组
+    var shuimingWord=document.getElementById("shuimingWord");
+    // alert(shuimingWord.value)
+    localStorage.setItem("shuimingWord",shuimingWord.value);
+    var ghostWord=document.getElementById("ghostWord");
+    // alert(ghostWord.value);
+    localStorage.setItem("ghostWord",ghostWord.value);
+
+
+
     //检测浏览器是否支持
     if(typeof(Storage) !== "undefined"){
     	//先将数组转换成JSON对象再
@@ -99,10 +109,21 @@ function buildArray(){//创建数组
 
 
 
+    if(shuimingWord.value.length==0){
+    	alert("请输入水民词组")
+    }else{
+    	if(ghostWord.value.length==0){
+    	alert("请输入幽灵词组")
+    }else{
+    	window.location.href="fanpai.html";
+    }
+
+    }
+
 
 
 	//跳转
-	window.location.href="fanpai.html";
+
 
 }
 var change =true;
@@ -111,6 +132,8 @@ function next(){
 	// var array=JSON.parse(localStorage.getltem("key"))
 	var array=JSON.parse(localStorage.getItem("lastname"));
 	var playerNum=localStorage.getItem("playerNum");
+	var shuimingWord=localStorage.getItem("shuimingWord");
+	var ghostWord=localStorage.getItem("ghostWord");
 	if(NO<playerNum){
 
 
@@ -122,6 +145,9 @@ function next(){
 		kuangTwo.style.display="none";
 		var numbers=document.getElementById("numbers1");
 		numbers.innerHTML=(NO+1);
+		var bottomText=document.getElementById("watch");
+		bottomText.innerHTML="查看"+(NO+1)+"号身份";
+
 
 
 
@@ -132,8 +158,15 @@ function next(){
 		var numbers=document.getElementById("numbers2");
 		numbers.innerHTML=(NO+1);
 		var role=document.getElementById("role");
+		var word=document.getElementById("word");
 
 		role.innerHTML="角色:"+array[NO];//这里没问题
+		if(array[NO]=="水民"){
+			word.innerHTML="词组是:"+shuimingWord;
+
+		}else{
+			word.innerHTML="词组是:"+ghostWord;
+		}
 
 
 
@@ -142,8 +175,13 @@ function next(){
 	}
 	change=!change;
 	if(NO<playerNum){
+
 		var bottomText=document.getElementById("watch");
-		bottomText.innerHTML="查看"+(NO+1)+"号身份";
+		if(change){bottomText.innerHTML="查看"+(NO+1)+"号身份";}
+		else{
+			bottomText.innerHTML="隐藏并传递给"+(NO+1)+"号";
+		}
+
 	}else{
 		var bottomText=document.getElementById("watch");
 		bottomText.innerHTML="法官查看";
@@ -154,15 +192,29 @@ function next(){
 
 }else{
 
-	window.location.href="peibi.html";
+	window.location.href="faguan.html";
 }
-	// alert(bottomText.innerHTML)
-	// var add=NO+1;
-	// bottomText.innerHTML+=add;
-	// bottomText.innerHTML+="号身份"
+
 
 
 }
+var playerNum1=localStorage.getItem("playerNum");
+
+for(var num=0;num<playerNum1;num++){
+	var gezhi=document.getElementsByTagName("article");
+		gezhi[num].style.display="flex";
+	var array=JSON.parse(localStorage.getItem("lastname"));
+	var juese= document.getElementsByClassName("p1");
+		juese[num].innerHTML=array[num];
+	var gezhi1=document.getElementsByClassName("p2");
+		gezhi1[num].innerHTML=num+1+"号"
+
+
+
+
+}
+
+
 
 
 
