@@ -5,7 +5,7 @@
       .bbb{padding-top: 3em;padding-bottom: 4em}
       .ccc{padding-top: 3em}
       .ddd{padding-top: 3em;background-color: #29bde0;padding-bottom: 3em}
-
+      .eee{padding-top: 3em;background-color: #f0f0f0;}
       p{margin: 0;}
 
       .box{
@@ -863,6 +863,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+         background-color: #f5c97b;
 
 
       }
@@ -872,7 +873,7 @@
         background-color: #f5c97b;
         text-align: center;
         line-height: 2.5em;
-        display: inline-block;
+        display: none;
 
       }
       article .p2{
@@ -883,7 +884,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 2.5em
       }
+      article:hover .p1{display: inline-block;}
+      article:hover .p2{margin-top: 0;}
 
 
 

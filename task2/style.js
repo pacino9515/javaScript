@@ -37,6 +37,7 @@ function reduce(){ //左侧数值减少
 	playerNum.value--;
 	if(playerNum.value<6){
 		playerNum.value=6;
+		alert("再多找两个人吧")
 	}else{
 		slider.value=playerNum.value;
 	}
@@ -49,6 +50,7 @@ function plus(){//右侧数值增加
 	if(playerNum.value>18){
 
 		playerNum.value=18;
+		alert("要不我们分两桌？")
 	}else{
 		slider.value=playerNum.value;
 	}
@@ -113,9 +115,16 @@ function buildArray(){//创建数组
     	alert("请输入水民词组")
     }else{
     	if(ghostWord.value.length==0){
-    	alert("请输入幽灵词组")
+    	alert("请输入幽灵词组");
+
     }else{
-    	window.location.href="fanpai.html";
+    	if(shuimingWord.value==ghostWord.value){
+    		alert("水民词组和幽灵词组不能相同")
+
+    	}else{
+    		window.location.href="fanpai.html";
+    	}
+
     }
 
     }
