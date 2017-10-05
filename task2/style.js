@@ -207,7 +207,8 @@ function next(){
 
 
 }
-var playerNum1=localStorage.getItem("playerNum");
+function watch(){
+	var playerNum1=localStorage.getItem("playerNum");
 
 for(var num=0;num<playerNum1;num++){
 	var gezhi=document.getElementsByTagName("article");
@@ -220,10 +221,16 @@ for(var num=0;num<playerNum1;num++){
 
 
 
+}
+
+
 
 }
 function link2(){
 	window.location.href="journal.html";
+}
+function link3(){
+	window.location.href="toupiao.html";
 }
 
 
