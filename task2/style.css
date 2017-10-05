@@ -889,6 +889,34 @@
       article:hover .p1{display: inline-block;}
       article:hover .p2{margin-top: 0;}
 
+      .journal{width: 96%;height: auto;display: flex;justify-content: center;align-items: flex-end;margin: 1.5em 2% 0 2%;flex-direction: column;
+      background-color: #f7f7f7;border: 1px solid #c9c9c9;}
+      .day{color: #29bde0;text-align:center;width: 100%;height: 3em;line-height: 3em;border-bottom: 1px solid #c9c9c9;
+      }
+      .day img{transform: scale(0.7,0.7);position: absolute;right: 1em;margin-top: 1em}
+      .process{width: 93%;height: auto;display: flex;flex-direction: column;justify-content: center;align-items: center;border-left: 1px solid #c9c9c9;
+      padding-top: 1.5em;}
+      .process .oneday{width: 75%;height:2.5em;line-height: 2.5em;text-align: center;background-color: #24a7c6;color:#ffffff;margin-bottom: 1em;margin-left: 0.3em;
+      }
+      .square+p{text-align: center;color:#ffffff;padding-right: 10px}
+      .process .square{
+        width: 0;height: 0;border-top:10px solid transparent;
+        border-bottom: 10px solid transparent;display: inline-block;
+        border-right: 20px solid #24a7c6;float: left;margin-left: -20px;margin-top: 0.6em
+      }
+      #ghost{margin-top: 2em}
+      .sun{width: 2em;height: 2em;display: flex;justify-content: center;align-items: center;border-radius: 50%;border:1px solid #c9c9c9;
+        position: absolute;left: 0.7em;bottom: 8.5em;z-index: 11;background-color: #f7f7f7;
+      }
+      .sun img{transform: scale(0.7,0.7);}
+      .moon{width: 2em;height: 2em;display: flex;justify-content: center;align-items: center;border-radius: 50%;border:1px solid #c9c9c9;
+        position: absolute;left: 0.7em;bottom: 24.5em;z-index: 11;background-color: #f7f7f7
+      }
+      .moon img{transform: scale(0.7,0.7);}
+
+
+
+
 
 
 

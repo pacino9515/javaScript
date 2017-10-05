@@ -222,6 +222,9 @@ for(var num=0;num<playerNum1;num++){
 
 
 }
+function link2(){
+	window.location.href="journal.html";
+}
 
 
 
