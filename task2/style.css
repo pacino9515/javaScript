@@ -39,7 +39,7 @@
         width: 100%;
         position: absolute;
         top: 0;
-        height: 3em;
+        height:2.5em;
         padding-top: 0.5em;
         display: flex;
         /*flex-direction: row;*/
@@ -198,8 +198,8 @@
       .neirong16{
         text-align: center;
 
-        width: 5em;
-        height: 5em;
+        width: 4.5em;
+        height: 4.5em;
         border:3px solid #ffffff;
 
         margin-left: 1em;
@@ -208,8 +208,8 @@
       }
       .neirong17{
         width:100%;
-        height: 3.5em;
-        line-height: 3.5em;
+        height: 3em;
+        line-height: 3em;
         background-color: #f5c97b;
         color: #565656;
       }
@@ -287,6 +287,7 @@
       .neirong19{
         display: none;
         z-index: 1;
+        margin-left: -0.2em
       }
         .neirong15{height: 8em;
             width: 33%;
@@ -398,12 +399,14 @@
       .tishi2{
         flex-grow: 1;
         height: 3em;
+        width: 2em;
         line-height: 3em;
         padding-left: 3em;
       }
       .tishi1{
 
         flex-grow: none;
+        float: right;
 
         transform: scale(0.6,0.6);
       }
@@ -847,7 +850,7 @@
          overflow: hidden;
          background-color: #29bde0;
          display: flex;
-         justify-content: space-around;
+         justify-content:flex-start;
          align-items: center;
          flex-wrap: wrap;
 
@@ -894,7 +897,7 @@
       .day{color: #29bde0;text-align:center;width: 100%;height: 3em;line-height: 3em;border-bottom: 1px solid #c9c9c9;
       }
       .day img{transform: scale(0.7,0.7);position: absolute;right: 1em;margin-top: 1em}
-      .process{width: 93%;height: auto;display: flex;flex-direction: column;justify-content: center;align-items: center;border-left: 1px solid #c9c9c9;
+      .process{width: 93%;height: auto;display: flex;flex-direction: column;justify-content: center;align-items: center;border-left: 1px solid #c9c9c9;position: relative;
       padding-top: 1.5em;}
       .process .oneday{width: 75%;height:2.5em;line-height: 2.5em;text-align: center;background-color: #24a7c6;color:#ffffff;margin-bottom: 1em;margin-left: 0.3em;
       }
@@ -906,13 +909,36 @@
       }
       #ghost{margin-top: 2em}
       .sun{width: 2em;height: 2em;display: flex;justify-content: center;align-items: center;border-radius: 50%;border:1px solid #c9c9c9;
-        position: absolute;left: 0.7em;bottom: 8.5em;z-index: 11;background-color: #f7f7f7;
+        position: absolute;left: -1.2em;top:17.5em; z-index: 11;background-color: #f7f7f7;
       }
       .sun img{transform: scale(0.7,0.7);}
       .moon{width: 2em;height: 2em;display: flex;justify-content: center;align-items: center;border-radius: 50%;border:1px solid #c9c9c9;
-        position: absolute;left: 0.7em;bottom: 24.5em;z-index: 11;background-color: #f7f7f7
+        position: absolute;left:-1.2em;top: 1.5em; z-index: 11;background-color: #f7f7f7
       }
       .moon img{transform: scale(0.7,0.7);}
+
+      .prompt{width: 100%;height: 3em;background-color: #b9e9f5;position: relative;display: flex;flex-wrap: nowrap;justify-content:space-around;align-items: center;}
+      .prompt p{padding-left: 1em;font-size: 14px;display: inline-block;width: 2em;flex-grow: 1;}
+      .prompt i{width: 4em;flex-grow: none; transform: scale(0.6,0.6);display: inline-block;}
+      .prompt .triangle{width: 0;height: 0;border-left: 6px solid transparent; border-right: 6px solid transparent;
+        border-top: 12px solid #b9e9f5;position: absolute;top: 3em;left: 3em}
+      .prompt+p{width: 90%;height: 2em;line-height: 2em;padding-left: 10%;font-size: 10px;color: #ffffff;padding-top: 1em}
+      .container11{width: 100%;height: auto;display: flex;justify-content: flex-start;flex-wrap: wrap;flex-direction: row;
+      }
+      .part{width: 33.3%;min-height: 8em;display: flex;justify-content: flex-start;align-items: center;flex-direction: column;position: relative;
+        }
+      .part1{width: 4.4em;height: 1.5em;
+        ;display:none;justify-content:space-around;align-items: center;}
+      .part11{width: 1em;height: 1em;background-color: #ffffff;
+        display: flex;justify-content: center;align-items: center;}
+      .part11 i{transform: scale(0.6,0.6);}
+      .part:hover .part1{display: flex}
+      .btn5{width: 80%;height: 2em;line-height: 2em;border-color: #fbb435;text-align: center;}
+
+
+
+
+
 
 
 
@@ -948,11 +974,11 @@
       .sprite-d {
           width: 29px;
           height: 21px;
-          background-position: -167px -5px;
+          background-position: -170px -5px;
       }
 
       .sprite-e {
-          width: 20px;
+          width: 24px;
           height: 21px;
           background-position: -206px -5px;
       }
@@ -960,7 +986,7 @@
       .sprite-f {
           width: 29px;
           height: 27px;
-          background-position: -236px -5px;
+          background-position: -240px -5px;
       }
 
       .sprite-g {

@@ -230,8 +230,19 @@ function link2(){
 	window.location.href="journal.html";
 }
 function link3(){
-	window.location.href="toupiao.html";
+	window.location.href="caozuo.html";
 }
+function  sure(){
+	if(confirm("请玩家们依次发言")){
+		//1.背景颜色改变
+		//2.参数发生变化 表示已经发生过（每次点击事件都需要判断参数是否变化并提示发生过或者前面有未完成）
+	}
+}
+function kill(){
+	window.location.href="toupiao.html";
+
+}
+
 
 
 
