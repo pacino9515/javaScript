@@ -217,7 +217,7 @@ for(var num=0;num<playerNum1;num++){
 	var juese= document.getElementsByClassName("p1");
 		juese[num].innerHTML=array[num];
 	var gezhi1=document.getElementsByClassName("p2");
-		gezhi1[num].innerHTML=num+1+"号"
+		gezhi1[num].innerHTML=num+1+"号";
 
 
 
@@ -239,7 +239,7 @@ function  sure(){
 	}
 }
 function kill(){
-	window.location.href="toupiao.html";
+	window.location.href="caozuo.html";
 
 }
 
