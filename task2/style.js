@@ -211,7 +211,7 @@ function watch(){
 	var playerNum1=localStorage.getItem("playerNum");
 
 for(var num=0;num<playerNum1;num++){
-	var gezhi=document.getElementsByTagName("article");
+	var gezhi=document.getElementsByClassName("part");
 		gezhi[num].style.display="flex";
 	var array=JSON.parse(localStorage.getItem("lastname"));
 	var juese= document.getElementsByClassName("p1");
