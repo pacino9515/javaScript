@@ -6,17 +6,12 @@ $(document).ready(function(){
 
 });
 var rotation = 0;
-$(document).ready(function(){
-	rotation=localStorage.getItem("rotation");
-	for(var i=0;i<rotation;i++){
-		$(".oneday").eq(i).css("background-color","#83b09a");
-		$(".square").eq(i).css("border-right","20px solid #83b09a");
 
-	}
-})
+
 $(".oneday").click(function(){
+	var rotationNum=($(this).parent().prevAll("div.day").length-1)*7+$(this).prevAll().length;
 
-	if($(this).prevAll().length==rotation){
+	if(rotationNum==rotation){
 
 	if(confirm("你确定吗?")){
 		$(this).css("background-color","#83b09a");
@@ -34,4 +29,16 @@ $(".oneday").click(function(){
 	}
 
 });
+
+
+
+$(document).ready(function(){
+
+	rotation=localStorage.getItem("rotation");
+	for(var i=0;i<rotation;i++){
+		$(".oneday").eq(i).css("background-color","#83b09a");
+		$(".square").eq(i).css("border-right","20px solid #83b09a");
+
+	}
+})
 
