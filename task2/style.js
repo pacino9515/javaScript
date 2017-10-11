@@ -244,6 +244,9 @@ function kill(){
 	window.location.href="caozuo.html";
 
 }
+function link4(){
+	window.location.href="journal.html";
+}
 
 
 

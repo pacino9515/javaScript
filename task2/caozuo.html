@@ -5,6 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta charset="utf-8">
       <link rel="stylesheet" href="style.css">
+      <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+      </script>
    </head>
    <body class="ddd" onload="watch()">
 
@@ -14,7 +16,7 @@
    	 <i class="sprite sprite-a"></i></span></a>
    	</div>
    	<div class="daohang7">
-   	杀手杀人
+   	<p  id="008">杀手杀人</p>
    	</div>
    	<div class="daohang6">
    	  <i class="sprite sprite-b"></i>
@@ -22,7 +24,7 @@
    	</nav>
        <div class="prompt">
 
-          <p>杀手请睁眼，杀手请选择要杀的对象。</p>
+          <p id="009">杀手请睁眼，杀手请选择要杀的对象。</p>
           <i class="sprite sprite-c"></i>
           <div class="triangle"></div>
 
@@ -414,10 +416,11 @@
 
 
    	<footer>
-        <button class="btn5">确定</button>
+        <button class="btn5" onclick="link4()">确定</button>
     </footer>
 	<script src="style.js">
 	</script>
+    <script src="myjquery.js"></script>
 
 </body>
 </html>
